@@ -27,7 +27,7 @@ $(document).ready(function () {
 						}
 						if ($(this).hasClass('search_price'))
 						{
-							var str = $(this).text().split('€');
+							var str = $.trim($(this).text()).split("€");
 							oldprice = str[0]+'€';
 							newprice = str[1]+'€';
 						}
